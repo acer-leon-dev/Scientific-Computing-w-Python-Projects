@@ -1,3 +1,4 @@
+# Arithmetic Formatter
 """
 Students in primary school often arrange arithmetic problems vertically to make them easier to solve. For example, "235 + 52" becomes:
 ```
@@ -8,7 +9,7 @@ Students in primary school often arrange arithmetic problems vertically to make 
 Finish the `arithmetic_arranger` function that receives a list of strings which are arithmetic problems, and returns the problems arranged vertically and side-by-side. The function should optionally take a second argument. When the second argument is set to `True`, the answers should be displayed.
 
 
-# Example
+### Example
 Function Call:
 ```
 arithmetic_arranger(["32 + 698", "3801 - 2", "45 + 43", "123 + 49"])
