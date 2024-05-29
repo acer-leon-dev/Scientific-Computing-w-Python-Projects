@@ -1,3 +1,8 @@
+# For printing the results
+def print_args(*args):
+    for arg in args:
+        print(arg, '\n')
+
 def arithmetic_arranger(problems, show_answers=False):
     ## Error if len(problems > 5)   
     if len(problems) > 5:
@@ -76,13 +81,15 @@ def arithmetic_arranger(problems, show_answers=False):
     return problems
 
 # Test various sequences
-print(f'1. \n{arithmetic_arranger(["32 - 698", "1 - 3801", "45 + 43", "123 + 49", "988 + 40"], True)}')
-print(f'2. \n{arithmetic_arranger(["1 + 2", "1 - 9380"])}')
-print(f'3. \n{arithmetic_arranger(["3 + 855", "3801 - 2", "45 + 43", "123 + 49"])}')
-print(f'4. \n{arithmetic_arranger(["11 + 4", "3801 - 2999", "1 + 2", "123 + 49", "1 - 9380"])}')
-print(f'5. \n{arithmetic_arranger(["44 + 815", "909 - 2", "45 + 43", "123 + 49", "888 + 40", "653 + 87"])}')
-print(f'6. \n{arithmetic_arranger(["3 / 855", "3801 - 2", "45 + 43", "123 + 49"])}')
-print(f'7. \n{arithmetic_arranger(["24 + 85215", "3801 - 2", "45 + 43", "123 + 49"])}')
-print(f'8. \n{arithmetic_arranger(["98 + 3g5", "3801 - 2", "45 + 43", "123 + 49"])}')
-print(f'9. \n{arithmetic_arranger(["3 + 855", "988 + 40"], True)}')
-print(f'10. \n{arithmetic_arranger(["32 - 698", "1 - 3801", "45 + 43", "123 + 49", "988 + 40"], True)}')
+print_args(
+    arithmetic_arranger(["32 - 698", "1 - 3801", "45 + 43", "123 + 49", "988 + 40"], True),
+    arithmetic_arranger(["1 + 2", "1 - 9380"]),
+    arithmetic_arranger(["3 + 855", "3801 - 2", "45 + 43", "123 + 49"]),
+    arithmetic_arranger(["11 + 4", "3801 - 2999", "1 + 2", "123 + 49", "1 - 9380"]),
+    arithmetic_arranger(["44 + 815", "909 - 2", "45 + 43", "123 + 49", "888 + 40", "653 + 87"]),
+    arithmetic_arranger(["3 / 855", "3801 - 2", "45 + 43", "123 + 49"]),
+    arithmetic_arranger(["24 + 85215", "3801 - 2", "45 + 43", "123 + 49"]),
+    arithmetic_arranger(["98 + 3g5", "3801 - 2", "45 + 43", "123 + 49"]),
+    arithmetic_arranger(["3 + 855", "988 + 40"], True),
+    arithmetic_arranger(["32 - 698", "1 - 3801", "45 + 43", "123 + 49", "988 + 40"], True)
+)
