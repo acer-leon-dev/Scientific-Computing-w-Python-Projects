@@ -10,7 +10,7 @@ Finish the `arithmetic_arranger` function that receives a list of strings which 
 
 ### Example
 Function Call:
-```
+```py
 arithmetic_arranger(["32 + 698", "3801 - 2", "45 + 43", "123 + 49"])
 ```
 Output:
