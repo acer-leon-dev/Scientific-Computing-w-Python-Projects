@@ -35,7 +35,7 @@ The chart should show the percentage spent in each category passed in to the fun
 This function will be tested with up to four categories.
 
 Look at the example output below very closely and make sure the spacing of the output matches the example exactly.
-```py
+```
 Percentage spent by category
 100|          
  90|          
