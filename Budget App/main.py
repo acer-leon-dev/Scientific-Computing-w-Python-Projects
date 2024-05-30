@@ -1,3 +1,7 @@
+"""
+Note: There are many seemingly random inclusions of whitespace throughtout the strings within {create_spend_chart}, such as whitespace before newline sequences. This is to perfectly match the graph with the formatting of the answer checker, because its requirements are highly strict, albeit very vague. 
+"""
+
 class Category:
     # Initialize the new category with a name and a ledger
     def __init__(self, name):
@@ -105,28 +109,25 @@ def create_spend_chart(categories):
     # Return entire bar graph
     return ''.join(spend_chart)
 
-
-# For testing
-food = Category("Food") # Create category for food
-entertainment = Category("Entertainment") # Create category for entertainent
-business = Category("Business") # Create category for business
-food.deposit(900, "deposit") # Deposit $900
-entertainment.deposit(900, "deposit") # Deposit $900
-business.deposit(900, "deposit") # Deposit $900
-food.withdraw(105.55, "mcdonalds") # Withdraw $105.55
-entertainment.withdraw(33.40, "avengers") # Withdraw $33.40
-business.withdraw(10.99, "dinner") # Withdraw $10.99
-education = Category("Education") # Create category for education
-entertainment.transfer(400, education) # Transfer $400 to education
-education.withdraw(150, "books") # Withdraw $150
-# Print the ledger for each category
-print(food, '\n')
-print(entertainment, '\n')
-print(business, '\n')
-print(education, '\n')
-# Print the bar graph of the percent of total expenses for each category.
-print(create_spend_chart([business, food, entertainment, education])) 
-
-"""
-Note: There are many seemingly random inclusions of whitespace throughtout the strings within {create_spend_chart}, such as whitespace before newline sequences. This is to perfectly match the graph with the formatting of the answer checker, because its requirements are highly strict, albeit very vague. 
-"""
+if __name__ == '__main__':
+    # Testing
+    # Create categories and make transactions
+    food = Category("Food") # Create category for food
+    entertainment = Category("Entertainment") # Create category for entertainent
+    business = Category("Business") # Create category for business
+    food.deposit(900, "deposit") # Deposit $900
+    entertainment.deposit(900, "deposit") # Deposit $900
+    business.deposit(900, "deposit") # Deposit $900
+    food.withdraw(105.55, "mcdonalds") # Withdraw $105.55
+    entertainment.withdraw(33.40, "avengers") # Withdraw $33.40
+    business.withdraw(10.99, "dinner") # Withdraw $10.99
+    education = Category("Education") # Create category for education
+    entertainment.transfer(400, education) # Transfer $400 to education
+    education.withdraw(150, "books") # Withdraw $150
+    # Print the ledger for each category
+    print(food, '\n')
+    print(entertainment, '\n')
+    print(business, '\n')
+    print(education, '\n')
+    # Print the bar graph of the percent of total expenses for each category.
+    print(create_spend_chart([business, food, entertainment, education])) 
