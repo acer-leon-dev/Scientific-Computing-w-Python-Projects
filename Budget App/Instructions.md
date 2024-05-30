@@ -20,7 +20,7 @@ food.transfer(50, clothing)
 print(food)
 ```
 And here is an example of the output:
-```py
+```
 *************Food*************
 initial deposit        1000.00
 groceries               -10.15
