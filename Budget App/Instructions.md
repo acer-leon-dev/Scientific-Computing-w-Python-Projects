@@ -10,7 +10,7 @@ When the budget object is printed it should display:
 - A list of the items in the ledger. Each line should show the description and amount. The first 23 characters of the description should be displayed, then the amount. The amount should be right aligned, contain two decimal places, and display a maximum of 7 characters.
 - A line displaying the category total.
 Here is an example usage:
-```
+```py
 food = Category("Food")
 food.deposit(1000, "deposit")
 food.withdraw(10.15, "groceries")
@@ -20,7 +20,7 @@ food.transfer(50, clothing)
 print(food)
 ```
 And here is an example of the output:
-```
+```py
 *************Food*************
 initial deposit        1000.00
 groceries               -10.15
@@ -35,7 +35,7 @@ The chart should show the percentage spent in each category passed in to the fun
 This function will be tested with up to four categories.
 
 Look at the example output below very closely and make sure the spacing of the output matches the example exactly.
-```
+```py
 Percentage spent by category
 100|          
  90|          
